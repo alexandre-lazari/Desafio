@@ -1,0 +1,31 @@
+﻿Quantidade máxima de visualizações: ???
+Quantidade máxima de compartilhamentos: ???
+Quantidade máxima de cliques: ???
+
+select sum(investimento_dia) vlr_inv from anuncio
+where nome_anuncio  = 'teste'  
+  and data_inicio  >= '01/05/2021'
+  and data_inicio  <= '11/05/2021'
+
+================================================================================
+
+try{
+   javax.swing.text.MaskFormatter data= new javax.swing.text.MaskFormatter("##########");
+   jTextInvestDia = new javax.swing.JFormattedTextField(data);
+}
+   catch (Exception e){
+}
+jTextInvestDia.addActionListener(new java.awt.event.ActionListener() {
+    public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jTextInvestDiaActionPerformed(evt);
+    }
+});
+
+================================================================================
+
+try{
+   javax.swing.text.MaskFormatter data= new javax.swing.text.MaskFormatter("##########");
+   jTextCdAnuncio = new javax.swing.JFormattedTextField(data);
+}
+   catch (Exception e){
+}
